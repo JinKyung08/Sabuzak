@@ -1,10 +1,11 @@
 # &#127963; 한눈에 보는 유물 - 사부작
 
-- 소개 	 					**Spring을 활용한 한눈에 볼 수 있는 유물 사이트**    
-- 관련활동                  K-Digital Training 멀티캠퍼스
-- 진행 기간                 2022년 11월 29일 ~ 2023년 01월 02일
+- 소개&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Spring을 활용한 한눈에 볼 수 있는 유물 사이트**    
+- 관련활동&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;K-Digital Training 멀티캠퍼스
+- 진행 기간&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2022년 11월 29일 ~ 2023년 01월 02일
 
----
+<br>
+<br>
 
 
 
@@ -12,6 +13,8 @@
 
 - [sabuzak - Github]( https://github.com/93backend/sabuzak.git )
 
+<br>
+<br>
 
 
 ## 📄 상세 내용
@@ -36,6 +39,8 @@
 ```
 
 
+<br>
+<br>
 
 
 
@@ -47,4 +52,6 @@
 |   HTML5    |          BootStrap          |                    |     Github     |    e뮤지엄     |
 |    CSS3    |           Mybatis           |                    |    ERDCloud    |                |
 |    Ajax    |                             |                    |  Google Drive  |                |
+
+
 
