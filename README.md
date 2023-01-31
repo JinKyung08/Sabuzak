@@ -99,4 +99,4 @@
 ​		<img src="img/sabuzak_erd.png" alt="sabuzak_erd" style="width:200px; height:200px" /> 
 
 - **PPT** 
-  - [5조_사부작_포트폴리오.pdf](ppt/5조_사부작_포트폴리오.pdf) 
+  - [5조_사부작_포트폴리오.pdf](project/5조_사부작_포트폴리오.pdf) 
