@@ -62,7 +62,7 @@
 ## 👧 담당한 기능
 
 - UI 시안
-  - [ui시안.pdf](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1c77f4df-13ad-45f7-9b16-d3c721cbe256/ui시안.pdf)
+  - [ui시안.pdf](project/ui시안.pdf)
 
 - 프론트
   - 박물관 , 유물 찜 페이지 (antiWishlist.html, museumWishlist.html)
@@ -86,13 +86,13 @@
 
 - **사이트 맵 및 기능리스트**
 
-  - [5조_한눈에 보는 유물 정보 .xmind](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5a2cde8a-1b24-42ee-8655-af5f9295f923/5조_한눈에_보는_유물_정보_.xmind)
+  - [5조_한눈에 보는 유물 정보 .xmind](project/5조_한눈에_보는_유물_정보_.xmind)
 
-  - [5조_사부작_사이트맵 및 기능리스트 우선순위.xmind](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2398a353-f0b9-40d5-8131-c2c9a4625d0f/5조_사부작_사이트맵_및_기능리스트_우선순위.xmind)
+  - [5조_사부작_사이트맵 및 기능리스트 우선순위.xmind](project/5조_사부작_사이트맵_및_기능리스트_우선순위.xmind)
 
 - **UI 기회안**
 
-  - [UI기획안.pdf](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a752affc-2472-4b1d-b39a-fbe46ec9ec52/UI기획안.pdf)
+  - [UI기획안.pdf](project/UI기획안.pdf)
 
 - **ERD**
 
