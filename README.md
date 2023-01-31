@@ -48,3 +48,48 @@
 |    CSS3    |           Mybatis           |                    |    ERDCloud    |                |
 |    Ajax    |                             |                    |  Google Drive  |                |
 
+
+
+
+
+## 👧 담당한 기능
+
+- UI 시안
+  - [ui시안.pdf](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1c77f4df-13ad-45f7-9b16-d3c721cbe256/ui시안.pdf)
+
+- 프론트
+  - 박물관 , 유물 찜 페이지 (antiWishlist.html, museumWishlist.html)
+  - 게시판 상세페이지 (boardDetail.html)
+  - 박물관 상세페이지 (museumDetails.html)
+  - 지도 페이지 (map.html)
+- 백엔드
+  - 공지사항, 자유게시판 페이지								
+    - 자유게시판 목록, 공지사항 목록
+      - 공지사항 작성 (only 관리자), 게시글 작성
+      - 공지사항 검색, 게시글 검색
+    - 공지사항, 게시글 상세
+      - 공지사항 수정/삭제(only 관리자), 게시글 수정/삭제
+      - 파일다운
+      - 댓글 작성/삭제
+      - 좋아요
+
+
+
+## 💻 프로젝트 관련 자료
+
+- **사이트 맵 및 기능리스트**
+
+  - [5조_한눈에 보는 유물 정보 .xmind](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5a2cde8a-1b24-42ee-8655-af5f9295f923/5조_한눈에_보는_유물_정보_.xmind)
+
+  - [5조_사부작_사이트맵 및 기능리스트 우선순위.xmind](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2398a353-f0b9-40d5-8131-c2c9a4625d0f/5조_사부작_사이트맵_및_기능리스트_우선순위.xmind)
+
+- **UI 기회안**
+
+  - [UI기획안.pdf](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a752affc-2472-4b1d-b39a-fbe46ec9ec52/UI기획안.pdf)
+
+- **ERD**
+
+​		<img src="img/sabuzak_erd.png" alt="sabuzak_erd" style="zoom: 10%;" /> 
+
+- **PPT** 
+  - [5조_사부작_포트폴리오.pdf](C:\Users\bangs\Desktop\5조_사부작_포트폴리오.pdf) 
