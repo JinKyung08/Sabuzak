@@ -86,11 +86,11 @@
 
 ## 📄 Project 기획 * 개발
 
-- [Semi-Project 브레인 스토밍](https://www.notion.so/Semi-Project-3126bcbebcd34b27813f9c0391611526)
+- [Semi-Project 브레인 스토밍](sabuzak/Semi-Project%20브레인스토밍.md)
 
-- [Semi-Project 브레인 스토밍2](https://www.notion.so/Semi-Project-2-526e359a3ce242eca3788d5eb9e99d65)
+- [Semi-Project 브레인 스토밍2](sabuzak/Semi-Project%20브레인스토밍2.md)
 
-- [Semi-Project 브레인 스토밍3](https://www.notion.so/Semi-Project-3-0d02643dcd0a4bfda8cbf23e88d2ea0a)
+- [Semi-Project 브레인 스토밍3](sabuzak/Semi-Project%20브레인스토밍3.md)
 
 
 
