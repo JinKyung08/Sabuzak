@@ -11,9 +11,10 @@
 
 ### 1. UI 디자인 (메인,기능페이지)시안 / 서진경
 
-<img src="img/메인.PNG" alt="메인" style="zoom: 50%;" /><img src="img/유물 기능.PNG" alt="유물 기능" style="zoom: 50%;" /><img src="img/박물관기능.PNG" alt="박물관기능" style="zoom: 50%;" />
+<img src="img/메인.PNG" alt="메인" width="300" height="500" /><img src="img/유물 기능.PNG" alt="유물 기능" width="300" height="500" /><img src="img/박물관기능.PNG" alt="박물관기능" width="300" height="500" />
 
-​				마이페이지 								 유물										박물관
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;마이페이지&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;유물&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;박물관
+
 
 **피드백 정리**
 
@@ -29,6 +30,7 @@
 
 - [e뮤지엄 API](https://www.emuseum.go.kr/openApi)  
 - [API_221220.xlsx](..\project\API_221220.xlsx) 
+
 
 ### 3. ERD 작성 / 조규완
 
