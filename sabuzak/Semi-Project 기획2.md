@@ -27,10 +27,8 @@
 
 ### 2. open API 파싱  / 임규근
 
-- [e뮤지엄 API](https://www.emuseum.go.kr/openApi) 
-- [API_221220.xlsx](C:\Users\bangs\Desktop\API_221220.xlsx) 
-
-
+- [e뮤지엄 API](https://www.emuseum.go.kr/openApi)  
+- [API_221220.xlsx](..\project\API_221220.xlsx) 
 
 ### 3. ERD 작성 / 조규완
 
