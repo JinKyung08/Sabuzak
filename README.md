@@ -92,6 +92,18 @@
 
 - [Semi-Project 브레인 스토밍3](sabuzak/Semi-Project%20브레인스토밍3.md)
 
+- [Semi-Project 기획](sabuzak/Semi-Project%20기획.md)
+
+- [Semi-Project 기획2](sabuzak/Semi-Project%20기획2.md)
+
+- [Semi-Project 기획3](sabuzak/Semi-Project%20기획3.md)
+
+  
+
+  
+
+  
+
 
 
 ## 💻 프로젝트 관련 자료
