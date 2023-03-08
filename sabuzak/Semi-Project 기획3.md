@@ -22,7 +22,7 @@
 
 ### 2. DDL, DML / 조규완님
 
- [1.sabuzak_DDL.sql](/blob/master/project/1.sabuzak_DDL.sql) 
+ [1.sabuzak_DDL.sql](project/1.sabuzak_DDL.sql) 
 
  [3.sabuzak_DML.sql](..\project\3.sabuzak_DML.sql) 
 
