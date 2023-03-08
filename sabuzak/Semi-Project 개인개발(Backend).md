@@ -22,7 +22,7 @@
 
 
 
- [BoardController.java](..\project\BoardController) 
+ [BoardController.java](..\project\BoardController.java) 
 
  [BoardMapper.java](..\project\BoardMapper.java) 
 
