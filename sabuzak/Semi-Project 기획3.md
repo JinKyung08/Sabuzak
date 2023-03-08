@@ -24,7 +24,7 @@
 
  [1.sabuzak_DDL.sql](project/1.sabuzak_DDL.sql) 
 
- [3.sabuzak_DML.sql](..\project\3.sabuzak_DML.sql) 
+ [3.sabuzak_DML.sql](project/3.sabuzak_DML.sql) 
 
 
 
