@@ -22,26 +22,26 @@
 
 
 
- [BoardController.java](..\project\BoardController.java) 
+ [BoardController.java](project/BoardController.java) 
 
- [BoardMapper.java](..\project\BoardMapper.java) 
+ [BoardMapper.java](project/BoardMapper.java) 
 
- [BoardService.java](..\project\BoardService.java)  
+ [BoardService.java](project/BoardService.java)  
 
- [Board.java](..\project\Board.java) 
+ [Board.java](project/Board.java) 
 
- [B_REPLY.java](..\project\B_REPLY.java) 
+ [B_REPLY.java](project/B_REPLY.java) 
 
- [Good.java](..\project\Good.java)   
+ [Good.java](project/Good.java)   
 
- [board-mapper.xml](..\project\board-mapper.xml)  
+ [board-mapper.xml](project/board-mapper.xml)  
 
- [board.jsp](..\project\board.jsp) 
+ [board.jsp](project/board.jsp) 
 
- [boardDetail.jsp](..\project\boardDetail.jsp) 
+ [boardDetail.jsp](project/boardDetail.jsp) 
 
- [notice.jsp](..\project\notice.jsp)  
+ [notice.jsp](project/notice.jsp)  
 
- [update.jsp](..\project\update.jsp) 
+ [update.jsp](project/update.jsp) 
 
- [write.jsp](..\project\write.jsp) 
+ [write.jsp](project/write.jsp) 
