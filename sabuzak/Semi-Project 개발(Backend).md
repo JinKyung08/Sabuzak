@@ -10,7 +10,7 @@
 
 ### 1. Github
 
-	-  [sabuzak](https://github.com/93backend/sabuzak)
+-  [sabuzak](https://github.com/93backend/sabuzak)
 
 
 
