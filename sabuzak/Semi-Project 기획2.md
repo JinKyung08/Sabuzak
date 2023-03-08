@@ -26,12 +26,12 @@
 
 
 
-### 2. open API 파싱  / 임규근
+### 2. open API 파싱  / 임규근님
 
 - [e뮤지엄 API](https://www.emuseum.go.kr/openApi)  
 - [API_221220.xlsx](..\project\API_221220.xlsx) 
 
 
-### 3. ERD 작성 / 조규완
+### 3. ERD 작성 / 조규완님
 
 ![sabuzak_erd](img/sabuzak_erd.png)

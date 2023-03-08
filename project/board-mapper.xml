@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+
+<mapper namespace="com.multi.mvc.board.model.mapper.BoardMapper">
+
+	<resultMap type="Board" id="boardListResultMap">
+		<id property="boardNo" column="boardNo"/>
+		<result property="memberNo" column="memberNo"/>
+		<result property="title" column="title"/>
+		<result property="content" column="content"/>
+		<result property="good" column="good"/>
+		<result property="type" column="type"/>
+		<result property="originalFileName" column="originalFileName"/>
+		<result property="renamedFileName" column="renamedFileName"/>
+		<result property="readcount" column="readcount"/>
+		<result property="createDate" column="createDate"/>
+		<result property="modifyDate" column="modifyDate"/>
+		<result property="no" column="no"/>	
+		<result property="id" column="id"/>	
+	</resultMap>
+
+	<resultMap type="B_REPLY" id="boardReplyResultMap">
+		<id 	property="bReplyNo"			column="bReplyNo"/>
+		<result property="boardNo" 		column="boardNo"/>
+		<result property="memberNo" 	column="memberNo"/>
+		<result property="id" 	column="id"/>
+		<result property="content" 		column="content"/>
+		<result property="good" 	column="good"/>
+		<result property="bad" 	column="bad"/>
+		<result property="createDate" 	column="createDate"/>
+		<result property="modifyDate" 	column="modifyDate"/>
+	</resultMap>
+	
+	<resultMap type="Good" id="boardGoodResultMap">
+		<id 	property="goodNo"			column="goodNo"/>
+		<result property="boardNo" 		column="boardNo"/>
+		<result property="memberNo" 	column="memberNo"/>
+	</resultMap>
+	
+	<resultMap type="Board" id="boardDetailResultMap" extends="boardListResultMap">
+		<collection property="replies" javaType="arrayList" columnPrefix="R_" 
+												resultMap="boardReplyResultMap"/>
+	</resultMap>
+	
+	<select id="selectBoardCount" resultType="int" parameterType="map">
+		SELECT  
+			COUNT(*)
+		FROM BOARD B JOIN MEMBER M ON(B.memberNo = M.memberNo) 
+		WHERE B.STATUS = 'Y'
+		AND B.type = '자유게시판'
+		<if test="writer != null">
+			AND M.id LIKE '%${writer}%' 
+		</if>		
+		<if test="title != null">
+			AND B.title LIKE '%${title}%' 
+		</if>		
+		<if test="content != null">
+			AND B.content LIKE '%${content}%' 
+		</if>		
+	</select>
+	
+	<select id="selectBoardCount2" resultType="int" parameterType="map">
+		SELECT  
+			COUNT(*)
+		FROM BOARD B JOIN MEMBER M ON(B.memberNo = M.memberNo) 
+		WHERE B.STATUS = 'Y'
+		AND B.type = '공지사항'
+		<if test="writer != null">
+			AND M.id LIKE '%${writer}%' 
+		</if>		
+		<if test="title != null">
+			AND B.title LIKE '%${title}%' 
+		</if>		
+		<if test="content != null">
+			AND B.content LIKE '%${content}%' 
+		</if>		
+	</select>
+	
+	<select id="selectBoardCount4" resultType="int" parameterType="map">
+		SELECT  
+			COUNT(*)
+		FROM BOARD B JOIN MEMBER M ON(B.memberNo = M.memberNo) 
+		WHERE B.STATUS = 'Y'
+		AND M.memberNo LIKE B.memberNo
+		<if test="writer != null">
+			AND M.id LIKE '%${writer}%' 
+		</if>		
+		<if test="title != null">
+			AND B.title LIKE '%${title}%' 
+		</if>		
+		<if test="content != null">
+			AND B.content LIKE '%${content}%' 
+		</if>		
+		<if test="memberNo != null">
+			AND B.memberNo = #{memberNo}
+		</if>	
+	</select>
+	
+	<!-- MySQL의 페이징 기능을 활용한 코드 -->
+	<select id="selectBoardList2" resultMap="boardListResultMap" parameterType="map">
+		SELECT  
+			 ROW_NUMBER() OVER(ORDER BY B.boardNo ASC) as no,B.boardNo, B.type,B.title, M.id, B.createDate, B.originalFileName, B.readcount, B.good, B.STATUS
+		FROM BOARD B JOIN MEMBER M ON(B.memberNo = M.memberNo) 
+		WHERE B.STATUS = 'Y'
+		AND B.type = '공지사항'
+		<if test="writer != null">
+			AND M.id LIKE '%${writer}%' 
+		</if>		
+		<if test="title != null">
+			AND B.title LIKE '%${title}%' 
+		</if>		
+		<if test="content != null">
+			AND B.content LIKE '%${content}%' 
+		</if>		
+		ORDER BY B.boardNo DESC LIMIT ${limit} OFFSET ${offset}
+	</select>
+	
+	<select id="selectBoardList" resultMap="boardListResultMap" parameterType="map">
+		SELECT  
+			 ROW_NUMBER() OVER(ORDER BY B.boardNo ASC) as no,B.boardNo, B.type,B.title, M.id, B.createDate, B.originalFileName, B.readcount, B.good, B.STATUS
+		FROM BOARD B JOIN MEMBER M ON(B.memberNo = M.memberNo) 
+		WHERE B.STATUS = 'Y'
+		AND B.type = '자유게시판'
+		<if test="writer != null">
+			AND M.id LIKE '%${writer}%' 
+		</if>		
+		<if test="title != null">
+			AND B.title LIKE '%${title}%' 
+		</if>		
+		<if test="content != null">
+			AND B.content LIKE '%${content}%' 
+		</if>		
+		ORDER BY B.boardNo DESC LIMIT ${limit} OFFSET ${offset}
+	</select>
+	
+	<select id="selectBoardList4" resultMap="boardListResultMap" parameterType="map">
+		SELECT  
+			 ROW_NUMBER() OVER(ORDER BY B.boardNo ASC) as no,B.boardNo, B.type,B.title, M.id, B.createDate, B.originalFileName, B.readcount, B.good, B.STATUS
+		FROM MEMBER M LEFT OUTER JOIN BOARD B ON(B.memberNo = M.memberNo) 
+		WHERE B.STATUS = 'Y'
+		AND M.memberNo LIKE B.memberNo
+		<if test="writer != null">
+			AND M.id LIKE '%${writer}%' 
+		</if>		
+		<if test="title != null">
+			AND B.title LIKE '%${title}%' 
+		</if>		
+		<if test="content != null">
+			AND B.content LIKE '%${content}%' 
+		</if>		
+		<if test="memberNo != null">
+			AND B.memberNo = #{memberNo}
+		</if>		
+		ORDER BY B.boardNo DESC LIMIT ${limit} OFFSET ${offset}
+	</select>
+
+	
+	<select id="selectBoardByNo" parameterType="int" resultMap="boardDetailResultMap">
+		SELECT  
+			B.boardNo, B.title, M.id, B.readcount, B.type, B.originalFileName, 
+			B.renamedFileName, B.content, B.createDate, B.modifyDate,B.good,
+			R.bReplyNo AS R_bReplyNo, 
+			R.boardNo AS R_boardNo, 
+			R.content AS R_content,  
+			M2.id AS R_id,
+			M.memberNo,
+			R.createDate AS R_createDate, 
+			R.modifyDate AS R_modifyDate
+		FROM BOARD B
+		JOIN MEMBER M ON(B.memberNo = M.memberNo)
+		LEFT OUTER JOIN B_REPLY R ON (B.boardNo = R.boardNo)
+		LEFT OUTER JOIN MEMBER M2 ON (R.memberNo = M2.memberNo)
+		WHERE B.STATUS = 'Y' AND B.boardNo = #{boardNo}
+	</select>
+	
+	<insert id="insertBoard" parameterType="Board">
+		INSERT INTO BOARD(
+			boardNo, memberNo, title,
+			content, originalFileName,
+			renamedFileName, readcount, STATUS,
+			createDate, modifyDate, type	
+		) VALUES (
+			0, #{memberNo}, #{title}, 
+			#{content}, #{originalFileName}, 
+			#{renamedFileName}, DEFAULT, DEFAULT, 
+			DEFAULT, DEFAULT, #{type}			
+		)
+	</insert>
+
+	<insert id="insertReply" parameterType="B_Reply">
+		INSERT INTO B_REPLY(
+				bReplyNo, boardNo, memberNo, 
+				content, STATUS, createDate, modifyDate) 
+			VALUES(
+				0, #{boardNo}, #{memberNo}, #{content}, 
+				DEFAULT, DEFAULT, DEFAULT
+			)
+	</insert>
+	
+	<update id="updateBoard" parameterType="Board">
+		UPDATE BOARD
+		SET
+			title=#{title},
+			content=#{content},
+			type=#{type},
+			good=#{good},
+			<if test="originalFileName != null">
+				originalFileName=#{originalFileName},
+			</if>
+			<if test="renamedFileName != null">
+				renamedFileName=#{renamedFileName},
+			</if>
+			modifyDate = CURRENT_TIMESTAMP
+		WHERE
+			boardNo=#{boardNo}
+	</update>
+	
+	<update id="updateBoardReply" parameterType="B_Reply">
+		UPDATE B_REPLY 
+		SET 
+			content=#{content}, modifyDate=CURRENT_TIMESTAMP
+		WHERE
+			bReplyNo=#{bReplyNo}
+	</update>
+	
+	<update id="updateBoardReplyGood" parameterType="map">
+		UPDATE B_REPLY SET good=#{good} WHERE bReplyNo=#{bReplyNo}
+	</update>
+	
+	<update id="updateBoardReplyBad" parameterType="map">
+		UPDATE B_REPLY SET bad=#{bad} WHERE bReplyNo=#{bReplyNo}
+	</update>
+	
+	<update id="updateReadCount" parameterType="map">
+		UPDATE BOARD SET readcount=#{readcount} WHERE boardNo=#{boardNo}
+	</update>
+	
+	<update id="deleteBoard" parameterType="int">
+		UPDATE BOARD SET STATUS='N' WHERE boardNo=#{boardNo}
+	</update>
+	
+	<update id="deleteBoardReply2" parameterType="int">
+		UPDATE B_REPLY SET STATUS='N' WHERE bReplyNo=#{bReplyNo}
+	</update>
+	
+	<delete id="deleteBoardReply" parameterType="int">
+		DELETE FROM B_REPLY WHERE bReplyNo=#{bReplyNo}
+	</delete>
+	<select id="nextText" resultMap="boardDetailResultMap" parameterType="Board">
+		SELECT * FROM board WHERE boardNo > #{boardNo} AND STATUS='Y' AND type=#{type} ORDER BY boardNo ASC LIMIT 1
+	</select>
+	<select id="prevText" resultMap="boardDetailResultMap" parameterType="Board">
+		SELECT * FROM board WHERE boardNo &lt; #{boardNo} AND STATUS='Y' AND type=#{type} ORDER BY boardNo DESC LIMIT 1
+	</select>
+	<insert id="insertGood" parameterType="Good">
+		INSERT INTO GOOD VALUES (NULL,#{boardNo},#{memberNo})
+	</insert>
+	<delete id="deleteGood" parameterType="int">
+		DELETE FROM GOOD WHERE memberNo = #{memberNo}
+	</delete>
+	<select id="selectGood" resultMap="boardGoodResultMap" parameterType="int">
+		SELECT * FROM good WHERE boardNo = #{boardNo}
+	</select>
+	
+	<select id="selectBoardList3" resultMap="boardListResultMap">
+		SELECT ROW_NUMBER() OVER(ORDER BY boardNo DESC) as no, boardNo, title, createDate   
+        FROM BOARD 
+        WHERE type = '공지사항' 
+        AND STATUS = 'Y'
+        ORDER BY boardNo DESC limit 4
+	</select>
+	
+</mapper>

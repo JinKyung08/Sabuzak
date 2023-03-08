@@ -102,6 +102,10 @@
 
 - [Semi-Project 개인개발(front)](sabuzak/Semi-Project%20개인개발(front).md)
 
+- [Semi-Project 개발(Backend)](sabuzak/Semi-Project%20개발(Backend).md)
+
+- [Semi-Project 개인개발(Backend)](sabuzak/Semi-Project%20개인개발(Backend).md)
+
   
 
   
