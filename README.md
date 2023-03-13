@@ -52,6 +52,7 @@
 |   HTML5    |          BootStrap          |                    |     Github     |    e뮤지엄     |
 |    CSS3    |           Mybatis           |                    |    ERDCloud    |                |
 |    Ajax    |                             |                    |  Google Drive  |                |
+| JavaScript |                             |                    |                |                |
 
 
 
