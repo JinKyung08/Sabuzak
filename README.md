@@ -63,7 +63,13 @@
 ## 👧 담당한 기능
 
 - UI 시안
-  - [ui시안.pdf](project/ui시안.pdf)
+  - 메인페이지
+  - 박물관,유물 검색(목록) 페이지
+  - 박물관, 유물 상세페이지
+  - 로그인, 회원가입
+  - 지도 <br>
+ 
+    [ui시안.pdf](project/ui시안.pdf)
 
 - 프론트
   - 박물관 , 유물 찜 페이지 (antiWishlist.html, museumWishlist.html)
